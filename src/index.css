@@ -84,6 +84,7 @@ body {
   padding-left: 0px;
   animation: shrink 10s infinite alternate;
   transition: ease-in-out;
+  /* z-index: 10; */
 }
 
 @keyframes shrink {
@@ -94,3 +95,8 @@ body {
     background-size: 100% 100%;
   }
 }
+
+/* body {
+  background-color: transparent;
+  z-index: -100;
+} */

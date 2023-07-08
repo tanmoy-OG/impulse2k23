@@ -1,56 +1,21 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
-
-
-
-
-
 
 .textBG {
   text-align: center;
   box-sizing: border-box;
-  background: linear-gradient(90deg, #E855E1, #7453DF, #fff,  #FFD96F, #00ADF0, #E855E1);
+  background: linear-gradient(
+    90deg,
+    #e855e1,
+    #7453df,
+    #fff,
+    #ffd96f,
+    #00adf0,
+    #e855e1
+  );
   background-size: 200%;
   animation: animate 3s linear infinite;
 }
@@ -64,18 +29,33 @@
   }
 }
 
-.wing h1{
+.wing h1 {
   margin-left: 10px;
   margin-right: 10px;
   transition: 1s ease-in-out;
 }
 
-.wing:hover h1{
+.wing:hover h1 {
   margin-left: 30px;
   margin-right: 30px;
   color: #fff;
-  text-shadow: 0 0 10px #fff,
-  0 0 20px #fff,
-  0 0 40px #fff,
-  0 0 80px #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff;
 }
+
+/* #impulse:hover {
+  text-shadow: 0 0 10px #fff;
+} */
+
+#navbar div a:hover {
+  text-shadow: 0 0 10px lightgoldenrodyellow;
+}
+
+/* #canvas {
+  position: absolute;
+  left: 0;
+  width: 1366;
+  max-width: 100%;
+  height: 277;
+  z-index: 10;
+} */
+

@@ -1,15 +1,14 @@
-import impulseLogo from "./assets/Impulse2k23 Logo.png";
-import { Timer } from "./Timer";
+import Timer from "./Timer";
 
-export const Present = ({ duration }) => {
+const Present = ({ duration }) => {
   return (
-    <div className="relative flex flex-col space-y-5 mt-10 mb-5">
-      <h1 className="text-5xl font-semibold tracking-wide text-pink-800">
+    <div className="flex flex-col space-y-5 mt-10 mb-5">
+      <h1 className="text-5xl font-semibold tracking-wide text-pink-600">
         BENGAL INSTITUTE OF TECHNOLOGY
       </h1>
       <h1 className="text-4xl text-sky-600">PRESENTS</h1>
       <div className="flex justify-center">
-        <img src={impulseLogo} alt="Impulse2k23 Logo" className="w-1/4" />
+        <img src="logo.png" alt="Impulse2k23 Logo" className="w-1/4" />
       </div>
       <Timer duration={duration} />
       {/* <div className="relative"><div className="absolute bg-red-600">s</div></div> */}
@@ -26,3 +25,5 @@ export const Present = ({ duration }) => {
     </div>
   );
 };
+
+export default Present;
