@@ -22,6 +22,7 @@ const Home = () => {
     <div className="absolute top-0 left-0 w-full h-fit">
       <object.Nav />
       <object.Present duration={time()} />
+      <object.Aliferous />
       <object.About />
       {/* <object.Events /> */}
       <object.Members />

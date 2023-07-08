@@ -47,6 +47,8 @@ const Members = () => {
             pic={"/team/convenor.jpeg"}
             name={"Prof. Kuntala Das"}
             designation={"convener"}
+            face={"https://www.facebook.com/kuntala.das.77"}
+            insta={"https://instagram.com/kuntalad"}
           />
         </SwiperSlide>
         <SwiperSlide className="h-fit w-fit rounded-2xl">
@@ -58,9 +60,12 @@ const Members = () => {
         </SwiperSlide>
         <SwiperSlide className="h-fit w-fit rounded-2xl">
           <CardUi
-            pic={"/team/coordinator.jpeg"}
+            pic={"/team/gs.jpeg"}
             name={"Shreyan Dey"}
             designation={"General Secretary"}
+            link={"https://www.linkedin.com/in/shrayan-dey-a166951bb"}
+            face={"https://www.facebook.com/SHRAYAN.dey.50552"}
+            insta={"https://instagram.com/_mr.unfamous_"}
           />
         </SwiperSlide>
         <SwiperSlide className="h-fit w-fit rounded-2xl">
@@ -68,9 +73,7 @@ const Members = () => {
             pic={"/team/ags1.jpeg"}
             name={"Simran Samanta"}
             designation={"Asst General Secretary"}
-            // git={"sae"}
             link={"https://www.linkedin.com/in/simran-samanta-563993223"}
-            // tweet={"zxvvsd"}
             face={"https://www.facebook.com/profile.php?id=100010407793894"}
             insta={"https://instagram.com/simran.samanta"}
           />
@@ -80,6 +83,9 @@ const Members = () => {
             pic={"/team/ags2.jpeg"}
             name={"Shivam Sinha"}
             designation={"Asst General Secretary"}
+            git={"https://github.com/shivam-0077"}
+            link={"https://www.linkedin.com/in/shivam-sinha-2078b2214"}
+            insta={"https://instagram.com/Shivam.sinha_"}
           />
         </SwiperSlide>
         <SwiperSlide className="h-fit w-fit rounded-2xl">
@@ -87,6 +93,8 @@ const Members = () => {
             pic={"/team/cs.jpeg"}
             name={"Pratim Sen Sharma"}
             designation={"Cultural Secretary"}
+            face={"https://www.facebook.com/Pratim.SenSharma"}
+            insta={"https://instagram.com/___reckless_evacuee___"}
           />
         </SwiperSlide>
         <SwiperSlide className="h-fit w-fit rounded-2xl">
@@ -94,6 +102,8 @@ const Members = () => {
             pic={"/team/acs1.jpeg"}
             name={"Pratisruti Chatterjee"}
             designation={"Asst Cultural Secretary"}
+            face={"https://www.facebook.com/pratisruti.chatterji.5"}
+            insta={"https://instagram.com/_s_i_m.i_"}
           />
         </SwiperSlide>
         <SwiperSlide className="h-fit w-fit rounded-2xl">
@@ -101,6 +111,7 @@ const Members = () => {
             pic={"/team/acs2.jpeg"}
             name={"Srish Bannerjee"}
             designation={"Asst Cultural Secretary"}
+            insta={"https://instagram.com/banerjee.srish"}
           />
         </SwiperSlide>
       </Swiper>
