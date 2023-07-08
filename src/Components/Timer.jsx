@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export const Timer = ({ duration }) => {
+const Timer = ({ duration }) => {
   const [time, setTime] = useState(duration);
   useEffect(() => {
     setTimeout(() => {
@@ -18,19 +18,19 @@ export const Timer = ({ duration }) => {
     return (
       <div className="flex justify-center text-white">
         <div className="basis-36">
-          <p className="text-8xl">{days}</p>
+          <p className="text-8xl">{days > 0 ? days : 0}</p>
           <span>DAYS</span>
         </div>
         <div className="basis-36">
-          <p className="text-8xl">{hours}</p>
+          <p className="text-8xl">{hours > 0 ? hours : 0}</p>
           <span>HOURS</span>
         </div>
         <div className="basis-36">
-          <p className="text-8xl">{minutes}</p>
+          <p className="text-8xl">{minutes > 0 ? minutes : 0}</p>
           <span>MINUTES</span>
         </div>
         <div className="basis-36">
-          <p className="text-8xl">{seconds}</p>
+          <p className="text-8xl">{seconds > 0 ? seconds : 0}</p>
           <span>SECONDS</span>
         </div>
       </div>
@@ -38,3 +38,5 @@ export const Timer = ({ duration }) => {
   };
   return <div className="pb-10">{getTime(time)}</div>;
 };
+
+export default Timer;

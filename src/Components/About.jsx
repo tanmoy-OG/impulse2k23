@@ -1,7 +1,6 @@
-export const About = () => {
+const About = () => {
   return (
-    <div className="flex flex-col pl-20 pr-20" id="about">
-      <div className="bg-neutral-800 h-80 w-full left-0 absolute mix-blend-overlay"></div>
+    <div className="flex flex-col pl-20 pr-20 bg-black/50 backdrop-blur-sm" id="about">
       <h1
         className="p-10 pb-5 text-5xl font-bold tracking-wider text-neutral-200"
         data-aos="fade-up"
@@ -22,3 +21,5 @@ export const About = () => {
     </div>
   );
 };
+
+export default About;
