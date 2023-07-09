@@ -61,7 +61,7 @@ const Footer = () => {
             <p>
               Shreyan Dey (GS) :{" "}
               <a
-                className="text-fuchsia-500 hover:text-rose-500 transition-all duration-300"
+                className="text-fuchsia-500 hover:text-rose-500 whitespace-nowrap transition-all duration-300"
                 href="tel:90739 99922"
               >
                 90739 99922
@@ -70,7 +70,7 @@ const Footer = () => {
             <p>
               Pratim Sen Sharma (CS) :{" "}
               <a
-                className="text-fuchsia-500 hover:text-rose-500 transition-all duration-300"
+                className="text-fuchsia-500 hover:text-rose-500 whitespace-nowrap transition-all duration-300"
                 href="tel:74395 06293"
               >
                 74395 06293
@@ -100,7 +100,7 @@ const Footer = () => {
           <a
             href="https://www.linkedin.com/in/tanmoy-choudhury/"
             target="_blank"
-            className="hover:text-rose-500 transition-all duration-300"
+            className="hover:text-rose-500 whitespace-nowrap transition-all duration-300"
           >
             Tanmoy Choudhury
           </a>

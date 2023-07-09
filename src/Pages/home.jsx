@@ -25,7 +25,7 @@ const Home = () => {
       {/* <object.Aliferous /> */}
       {/* <object.About /> */}
       {/* <object.Events /> */}
-      {/* <object.Members /> */}
+      <object.Members />
       <object.Sponsors />
       <object.Footer />
       <div className=""></div>
