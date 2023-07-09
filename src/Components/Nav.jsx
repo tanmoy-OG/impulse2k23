@@ -51,25 +51,31 @@ const Nav = () => {
             ABOUT
           </a>
           <a
-            href="#"
+            href="#members"
             className="transition-all duration-200 hover:text-yellow-200"
           >
             EVENTS
           </a>
           <a
-            href="#"
+            href="#members"
             className="transition-all duration-200 hover:text-yellow-200"
           >
             MEMBERS
           </a>
           <a
-            href="#"
+            href="#sponsors"
             className="transition-all duration-200 hover:text-yellow-200"
           >
             SPONSORS
           </a>
           <a
-            href="#footer"
+            href="#venue"
+            className="transition-all duration-200 hover:text-yellow-200"
+          >
+            VENUE
+          </a>
+          <a
+            href="#contactUs"
             className="transition-all duration-200 hover:text-yellow-200"
           >
             CONTACT US
@@ -92,19 +98,25 @@ const Nav = () => {
               EVENTS
             </a>
             <a
-              href="#"
+              href="#members"
               className="transition-all duration-200 hover:text-yellow-200"
             >
               MEMBERS
             </a>
             <a
-              href="#"
+              href="#sponsors"
               className="transition-all duration-200 hover:text-yellow-200"
             >
               SPONSORS
             </a>
             <a
-              href="#footer"
+              href="#venue"
+              className="transition-all duration-200 hover:text-yellow-200"
+            >
+              VENUE
+            </a>
+            <a
+              href="#contactUs"
               className="transition-all duration-200 hover:text-yellow-200"
             >
               CONTACT US

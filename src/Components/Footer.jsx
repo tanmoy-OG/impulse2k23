@@ -14,6 +14,7 @@ const Footer = () => {
         <div className="basis-1/3">
           <h1
             className="pb-4 text-4xl sm:text-5xl 2xl:text-6xl font-bold tracking-wide font-custom-sans uppercase flex  justify-center sm:justify-start"
+            id="venue"
             data-aos="fade-up"
             data-aos-easing="ease-in-out"
           >
@@ -57,6 +58,7 @@ const Footer = () => {
         <div className="basis-1/3 pt-4 sm:pt-0">
           <h1
             className="pb-4 text-4xl sm:text-5xl 2xl:text-6xl font-bold tracking-wide font-custom-sans whitespace-nowrap uppercase flex justify-center sm:justify-end sm:text-right"
+            id="contactUs"
             data-aos="fade-up"
             data-aos-easing="ease-in-out"
           >
