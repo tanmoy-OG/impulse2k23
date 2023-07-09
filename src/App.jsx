@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./App.css";
+import "./assets/App.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "./Components/hovertree";
