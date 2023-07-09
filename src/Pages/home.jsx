@@ -19,13 +19,13 @@ const Home = () => {
     return totalRemainingTime > 0 ? totalRemainingTime : 0;
   };
   return (
-    <div className="absolute top-0 left-0 w-full h-fit">
-      <object.Nav />
-      <object.Present duration={time()} />
-      <object.Aliferous />
-      <object.About />
+    <div className="absolute top-0 left-0 w-full h-fit text-violet-200">
+      {/* <object.Nav /> */}
+      {/* <object.Present duration={time()} /> */}
+      {/* <object.Aliferous /> */}
+      {/* <object.About /> */}
       {/* <object.Events /> */}
-      <object.Members />
+      {/* <object.Members /> */}
       <object.Sponsors />
       <object.Footer />
       <div className=""></div>
