@@ -16,10 +16,11 @@ import { Autoplay, EffectCoverflow, Navigation } from "swiper/modules";
 
 const Members = () => {
   return (
-    <div className="flex flex-col pt-16 pb-20 backdrop-blur-sm">
+    <div className="flex flex-col pt-16 pb-20">
       <h1
         className="mb-4 text-4xl sm:text-5xl 2xl:text-6xl font-bold tracking-wide uppercase"
         data-aos="fade-up"
+        data-aos-easing="ease-in-out"
       >
         Core Team
       </h1>
@@ -41,6 +42,9 @@ const Members = () => {
         }}
         modules={[Autoplay, EffectCoverflow, Navigation]}
         className="w-full mt-10"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
       >
         <SwiperSlide className="h-fit w-fit rounded-2xl">
           <CardUi
