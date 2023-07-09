@@ -9,7 +9,9 @@ const MailTo = ({ mailto, label }) => {
         e.preventDefault();
       }}
     >
-      <p className="pl-1 text-fuchsia-500">{label}</p>
+      <p className="pl-1 text-fuchsia-500 hover:text-rose-500 whitespace-nowrap transition-all duration-300">
+        {label}
+      </p>
     </Link>
   );
 };

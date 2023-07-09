@@ -16,9 +16,9 @@ import { Autoplay, EffectCoverflow, Navigation } from "swiper/modules";
 
 const Members = () => {
   return (
-    <div className="">
+    <div className="flex flex-col pt-16 pb-20 backdrop-blur-sm">
       <h1
-        className="p-10 pb-5 text-5xl font-bold tracking-wider text-neutral-200 uppercase"
+        className="mb-4 text-4xl sm:text-5xl 2xl:text-6xl font-bold tracking-wide uppercase"
         data-aos="fade-up"
       >
         Core Team
@@ -40,13 +40,15 @@ const Members = () => {
           modifier: 1,
         }}
         modules={[Autoplay, EffectCoverflow, Navigation]}
-        className="w-full"
+        className="w-full mt-10"
       >
         <SwiperSlide className="h-fit w-fit rounded-2xl">
           <CardUi
             pic={"/team/convenor.jpeg"}
             name={"Prof. Kuntala Das"}
             designation={"convener"}
+            face={"https://www.facebook.com/kuntala.das.77"}
+            insta={"https://instagram.com/kuntalad"}
           />
         </SwiperSlide>
         <SwiperSlide className="h-fit w-fit rounded-2xl">
@@ -58,9 +60,12 @@ const Members = () => {
         </SwiperSlide>
         <SwiperSlide className="h-fit w-fit rounded-2xl">
           <CardUi
-            pic={"/team/coordinator.jpeg"}
+            pic={"/team/gs.jpeg"}
             name={"Shreyan Dey"}
             designation={"General Secretary"}
+            link={"https://www.linkedin.com/in/shrayan-dey-a166951bb"}
+            face={"https://www.facebook.com/SHRAYAN.dey.50552"}
+            insta={"https://instagram.com/_mr.unfamous_"}
           />
         </SwiperSlide>
         <SwiperSlide className="h-fit w-fit rounded-2xl">
@@ -68,9 +73,7 @@ const Members = () => {
             pic={"/team/ags1.jpeg"}
             name={"Simran Samanta"}
             designation={"Asst General Secretary"}
-            // git={"sae"}
             link={"https://www.linkedin.com/in/simran-samanta-563993223"}
-            // tweet={"zxvvsd"}
             face={"https://www.facebook.com/profile.php?id=100010407793894"}
             insta={"https://instagram.com/simran.samanta"}
           />
@@ -80,6 +83,9 @@ const Members = () => {
             pic={"/team/ags2.jpeg"}
             name={"Shivam Sinha"}
             designation={"Asst General Secretary"}
+            git={"https://github.com/shivam-0077"}
+            link={"https://www.linkedin.com/in/shivam-sinha-2078b2214"}
+            insta={"https://instagram.com/Shivam.sinha_"}
           />
         </SwiperSlide>
         <SwiperSlide className="h-fit w-fit rounded-2xl">
@@ -87,6 +93,8 @@ const Members = () => {
             pic={"/team/cs.jpeg"}
             name={"Pratim Sen Sharma"}
             designation={"Cultural Secretary"}
+            face={"https://www.facebook.com/Pratim.SenSharma"}
+            insta={"https://instagram.com/___reckless_evacuee___"}
           />
         </SwiperSlide>
         <SwiperSlide className="h-fit w-fit rounded-2xl">
@@ -94,6 +102,8 @@ const Members = () => {
             pic={"/team/acs1.jpeg"}
             name={"Pratisruti Chatterjee"}
             designation={"Asst Cultural Secretary"}
+            face={"https://www.facebook.com/pratisruti.chatterji.5"}
+            insta={"https://instagram.com/_s_i_m.i_"}
           />
         </SwiperSlide>
         <SwiperSlide className="h-fit w-fit rounded-2xl">
@@ -101,6 +111,7 @@ const Members = () => {
             pic={"/team/acs2.jpeg"}
             name={"Srish Bannerjee"}
             designation={"Asst Cultural Secretary"}
+            insta={"https://instagram.com/banerjee.srish"}
           />
         </SwiperSlide>
       </Swiper>
@@ -111,19 +122,21 @@ const Members = () => {
 const CardUi = (props) => {
   return (
     <div className="bg-violet-300 hover:bg-violet-200 rounded-2xl h-full w-full pt-4 pb-4 transition-all duration-500 group">
-      <div className="rounded-full h-48 w-48 mb-4 ml-10 mr-10 border-8 border-violet-400 overflow-hidden">
+      <div className="rounded-full h-52 w-52 mb-4 ml-8 mr-8 border-8 border-violet-400 overflow-hidden">
         <img
           className="rotate-6 group-hover:rotate-0 group-hover:scale-125 transition-all duration-500"
           src={props.pic}
           alt=""
         />
       </div>
-      <h1 className="text-xs tracking-wide mb-0 uppercase">
+      <h1 className="text-xs text-violet-950 tracking-wide mb-0 uppercase">
         {props.designation}
       </h1>
       {/* <img className="w-60 mt-0 mx-auto" src="divider.png" alt="" /> */}
       <img className="w-60 mt-0 mx-auto" src="divider.png" alt="" />
-      <h1 className="mb-4 text-lg tracking-wide">{props.name}</h1>
+      <h1 className="mb-4 text-lg text-fuchsia-800 font-bold tracking-wider">
+        {props.name}
+      </h1>
       <div className="flex justify-center gap-2 mb-4 text-violet-500">
         <a
           href={props.git}
