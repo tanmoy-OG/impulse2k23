@@ -16,7 +16,7 @@ import { Autoplay, EffectCoverflow, Navigation } from "swiper/modules";
 
 const Members = () => {
   return (
-    <div className="flex flex-col justify-center h-screen backdrop-blur-sm">
+    <div className="flex flex-col pt-16 pb-20 backdrop-blur-sm">
       <h1
         className="mb-4 text-4xl sm:text-5xl 2xl:text-6xl font-bold tracking-wide uppercase"
         data-aos="fade-up"
@@ -40,7 +40,7 @@ const Members = () => {
           modifier: 1,
         }}
         modules={[Autoplay, EffectCoverflow, Navigation]}
-        className="w-full pt-10 bg-green-800"
+        className="w-full mt-10"
       >
         <SwiperSlide className="h-fit w-fit rounded-2xl">
           <CardUi
@@ -122,7 +122,7 @@ const Members = () => {
 const CardUi = (props) => {
   return (
     <div className="bg-violet-300 hover:bg-violet-200 rounded-2xl h-full w-full pt-4 pb-4 transition-all duration-500 group">
-      <div className="rounded-full h-48 w-48 mb-4 ml-10 mr-10 border-8 border-violet-400 overflow-hidden">
+      <div className="rounded-full h-52 w-52 mb-4 ml-8 mr-8 border-8 border-violet-400 overflow-hidden">
         <img
           className="rotate-6 group-hover:rotate-0 group-hover:scale-125 transition-all duration-500"
           src={props.pic}

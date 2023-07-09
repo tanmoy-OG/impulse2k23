@@ -20,8 +20,8 @@ const Home = () => {
   };
   return (
     <div className="absolute top-0 left-0 w-full h-fit text-violet-200">
-      {/* <object.Nav /> */}
-      {/* <object.Present duration={time()} /> */}
+      <object.Nav />
+      <object.Present duration={time()} />
       {/* <object.Aliferous /> */}
       {/* <object.About /> */}
       {/* <object.Events /> */}
