@@ -17,10 +17,6 @@
 
   Math.TWO_PI = Math.PI * 2;
 
-  // ========================================================================================
-  // Oscillator 何问起
-  // ----------------------------------------------------------------------------------------
-
   function Oscillator(options) {
     this.init(options || {});
   }
@@ -47,10 +43,6 @@
       },
     };
   })();
-
-  // ========================================================================================
-  // Tendril hovertree.com
-  // ----------------------------------------------------------------------------------------
 
   function Tendril(options) {
     this.init(options || {});
@@ -234,27 +226,8 @@
         save();
         break;
       default:
-      // console.log(event.keyCode); hovertree.com
     }
   }
-
-  // function letters(id) {
-  //   var el = document.getElementById(id),
-  //     letters = el.innerHTML.replace("&amp;", "&").split(""),
-  //     heading = "";
-
-  //   for (var i = 0, n = letters.length, letter; i < n; i++) {
-  //     letter = letters[i].replace("&", "&amp");
-  //     heading += letter.trim()
-  //       ? '<span class="letter-' + i + '">' + letter + "</span>"
-  //       : "&nbsp;";
-  //   }
-
-  //   el.innerHTML = heading;
-  //   setTimeout(function () {
-  //     el.className = "transition-in";
-  //   }, Math.random() * 500 + 500);
-  // }
 
   function save() {
     if (!buffer) {
@@ -295,9 +268,6 @@
       "wallpaper",
       "top=0,left=0,width=" + buffer.width + ",height=" + buffer.height
     );
-
-    // form.input.value = buffer.toDataURL().substr(22);
-    // form.submit(); hovertree.com
   }
 
   window.requestAnimFrame = (function () {
@@ -343,8 +313,6 @@
 
     if (window.DEBUG) {
       var gui = new dat.GUI();
-
-      // gui.add(settings, 'debug');
       settings.gui.add(settings, "trails", 1, 30).onChange(reset);
       settings.gui.add(settings, "size", 25, 75).onFinishChange(reset);
       settings.gui.add(settings, "friction", 0.45, 0.55).onFinishChange(reset);
