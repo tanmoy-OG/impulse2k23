@@ -43,6 +43,7 @@ const Members = () => {
         modules={[Autoplay, EffectCoverflow, Navigation]}
         className="w-full mt-10"
         data-aos="fade-up"
+        data-aos-delay="300"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
       >
