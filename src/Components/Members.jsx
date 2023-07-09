@@ -16,9 +16,9 @@ import { Autoplay, EffectCoverflow, Navigation } from "swiper/modules";
 
 const Members = () => {
   return (
-    <div className="">
+    <div className="flex flex-col justify-center h-screen backdrop-blur-sm">
       <h1
-        className="p-10 pb-5 text-5xl font-bold tracking-wider text-neutral-200 uppercase"
+        className="mb-4 text-4xl sm:text-5xl 2xl:text-6xl font-bold tracking-wide uppercase"
         data-aos="fade-up"
       >
         Core Team
@@ -40,7 +40,7 @@ const Members = () => {
           modifier: 1,
         }}
         modules={[Autoplay, EffectCoverflow, Navigation]}
-        className="w-full"
+        className="w-full pt-10 bg-green-800"
       >
         <SwiperSlide className="h-fit w-fit rounded-2xl">
           <CardUi
@@ -129,12 +129,14 @@ const CardUi = (props) => {
           alt=""
         />
       </div>
-      <h1 className="text-xs tracking-wide mb-0 uppercase">
+      <h1 className="text-xs text-violet-950 tracking-wide mb-0 uppercase">
         {props.designation}
       </h1>
       {/* <img className="w-60 mt-0 mx-auto" src="divider.png" alt="" /> */}
       <img className="w-60 mt-0 mx-auto" src="divider.png" alt="" />
-      <h1 className="mb-4 text-lg tracking-wide">{props.name}</h1>
+      <h1 className="mb-4 text-lg text-fuchsia-800 font-bold tracking-wider">
+        {props.name}
+      </h1>
       <div className="flex justify-center gap-2 mb-4 text-violet-500">
         <a
           href={props.git}
