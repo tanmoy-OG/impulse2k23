@@ -16,30 +16,30 @@ const Timer = ({ duration }) => {
     let minutes = parseInt(totalMinutes % 60);
     let hours = parseInt(totalHours % 24);
     return (
-      <div className="flex justify-center text-white">
+      <div className="flex justify-center">
         <div className="basis-36">
-          <p className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl">
+          <p className="text-5xl sm:text-6xl md:text-7xl xl:text-8xl">
             {days > 0 ? days : 0}
           </p>
-          <span>DAYS</span>
+          <span className="text-xs sm:text-sm lg:text-base xl:text-md">DAYS</span>
         </div>
         <div className="basis-36">
-          <p className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl">
+          <p className="text-5xl sm:text-6xl md:text-7xl xl:text-8xl">
             {hours > 0 ? hours : 0}
           </p>
-          <span>HOURS</span>
+          <span className="text-xs sm:text-sm lg:text-base xl:text-md">HOURS</span>
         </div>
         <div className="basis-36">
-          <p className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl">
+          <p className="text-5xl sm:text-6xl md:text-7xl xl:text-8xl">
             {minutes > 0 ? minutes : 0}
           </p>
-          <span>MINUTES</span>
+          <span className="text-xs sm:text-sm lg:text-base xl:text-md">MINUTES</span>
         </div>
         <div className="basis-36">
-          <p className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl">
+          <p className="text-5xl sm:text-6xl md:text-7xl xl:text-8xl">
             {seconds > 0 ? seconds : 0}
           </p>
-          <span>SECONDS</span>
+          <span className="text-xs sm:text-sm lg:text-base xl:text-md">SECONDS</span>
         </div>
       </div>
     );
