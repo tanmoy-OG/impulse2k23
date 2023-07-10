@@ -89,13 +89,13 @@ const Footer = () => {
             </p>
             <div className="flex justify-center gap-4 pt-2">
               <a
-                href="https://www.facebook.com/bits2bytes.bit?mibextid=ZbWKwL"
+                href="#"
                 target="_blank"
               >
                 <FiFacebook className="text-3xl hover:text-rose-500 transition-all duration-300" />
               </a>
               <a
-                href="https://instagram.com/bits2bytes_2k23?igshid=MzNlNGNkZWQ4Mg=="
+                href="#"
                 target="_blank"
               >
                 <FiInstagram className="text-3xl hover:text-rose-500 transition-all duration-300" />
@@ -114,15 +114,15 @@ const Footer = () => {
             className="hover:text-rose-500 whitespace-nowrap transition-all duration-300"
           >
             Tanmoy Choudhury
-          </a>
-          {/* ,{" "}
+          </a>{" "}
+          &{" "}
           <a
-            href="https://www.linkedin.com/in/sruti-das-b4898926a/"
+            href="https://www.linkedin.com/in/priyankar-sarkar/"
             target="_blank"
-            className="hover:text-orange-400 transition-all duration-300"
+            className="hover:text-rose-500 whitespace-nowrap transition-all duration-300"
           >
-            
-          </a> */}
+            Priyankar Sarkar
+          </a>
         </h1>
       </div>
     </div>
