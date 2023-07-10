@@ -25,12 +25,11 @@ const Home = () => {
       <object.Aliferous />
       <div className="backdrop-blur-sm">
         <object.About />
-        {/* <object.Events /> */}
+        <object.Events />
         <object.Members />
         <object.Sponsors />
         <object.Footer />
       </div>
-      <div className=""></div>
       {/* <canvas
         className="fixed left-0 top-0 w-full h-screen -z-10"
         id="canvas"

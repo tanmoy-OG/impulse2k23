@@ -20,6 +20,17 @@ export default {
         }
       }
     },
+    screens: {
+
+      '350px':'350px',
+      'sm': '599px',
+      '700px': '700px',
+      'md': '768px',
+      '950px': '950px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+    }
   },
   plugins: [],
 }
