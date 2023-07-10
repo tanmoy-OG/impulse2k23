@@ -1,53 +1,89 @@
-import Band from "../assets/band1.jpg";
-import EventCard from "./EventCard";
+import React, { useRef, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import "../App.css";
+import { EffectCoverflow, Pagination } from "swiper/modules";
+import pic from "../../public/band1.jpg";
+import EachEvent from "./EachEvent";
 
 const Events = () => {
   return (
-    <div className="">
-      <div class="container">
-        <input type="radio" name="slider" class="d-none" id="s1" checked />
-        <input type="radio" name="slider" class="d-none" id="s2" />
-        <input type="radio" name="slider" class="d-none" id="s3" />
-        <input type="radio" name="slider" class="d-none" id="s4" />
-        <input type="radio" name="slider" class="d-none" id="s5" />
-        <div class="cards">
-          <EventCard
-            img={Band}
-            title="picture 1"
-            about="about picture 1"
-            for="s1"
-            id="slide1"
+    <div className="event-parent flex flex-col pt-16 gap-6 lg:gap-10">
+      <h1
+        className="mb-4 text-4xl sm:text-5xl 2xl:text-6xl font-bold tracking-wide uppercase"
+        data-aos="fade-up"
+        data-aos-easing="ease-in-out"
+      >
+        EVENTS
+      </h1>
+      <Swiper
+        effect={"coverflow"}
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={"auto"}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        }}
+        pagination={true}
+        modules={[EffectCoverflow, Pagination]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <EachEvent
+            pic={pic}
+            title="Event title"
+            desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, alias aspernatur labore beatae dignissimos at consequuntur in? Nobis commodi dolorem temporibus ducimus sit. Et, minima perspiciatis ex voluptas adipisci deleniti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, alias aspernatur labore beatae dignissimos at consequuntur in? Nobis commodi dolorem temporibus ducimus sit. Et, minima perspiciatis ex voluptas adipisci deleniti END"
           />
-          <EventCard
-            img={Band}
-            title="picture 2"
-            about="about picture 2"
-            for="s2"
-            id="slide2"
+        </SwiperSlide>
+        <SwiperSlide>
+          <EachEvent
+            pic={pic}
+            title="Event title"
+            desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, alias aspernatur labore beatae dignissimos at consequuntur in? Nobis commodi dolorem temporibus ducimus sit. Et, minima perspiciatis ex voluptas adipisci deleniti?"
           />
-          <EventCard
-            img={Band}
-            title="picture 3"
-            about="about picture 3"
-            for="s3"
-            id="slide3"
+        </SwiperSlide>
+        <SwiperSlide>
+          <EachEvent
+            pic={pic}
+            title="Event title"
+            desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, alias aspernatur labore beatae dignissimos at consequuntur in? Nobis commodi dolorem temporibus ducimus sit. Et, minima perspiciatis ex voluptas adipisci deleniti?"
           />
-          <EventCard
-            img={Band}
-            title="picture 4"
-            about="about picture 4"
-            for="s4"
-            id="slide4"
+        </SwiperSlide>
+        <SwiperSlide>
+          <EachEvent
+            pic={pic}
+            title="Event title"
+            desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, alias aspernatur labore beatae dignissimos at consequuntur in? Nobis commodi dolorem temporibus ducimus sit. Et, minima perspiciatis ex voluptas adipisci deleniti?"
           />
-          <EventCard
-            img={Band}
-            title="picture 5"
-            about="about picture 5"
-            for="s5"
-            id="slide5"
+        </SwiperSlide>
+        <SwiperSlide>
+          <EachEvent
+            pic={pic}
+            title="Event title"
+            desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, alias aspernatur labore beatae dignissimos at consequuntur in? Nobis commodi dolorem temporibus ducimus sit. Et, minima perspiciatis ex voluptas adipisci deleniti?"
           />
-        </div>
-      </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <EachEvent
+            pic={pic}
+            title="Event title"
+            desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, alias aspernatur labore beatae dignissimos at consequuntur in? Nobis commodi dolorem temporibus ducimus sit. Et, minima perspiciatis ex voluptas adipisci deleniti?"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <EachEvent
+            pic={pic}
+            title="Event title"
+            desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, alias aspernatur labore beatae dignissimos at consequuntur in? Nobis commodi dolorem temporibus ducimus sit. Et, minima perspiciatis ex voluptas adipisci deleniti?"
+          />
+        </SwiperSlide>
+      </Swiper>
     </div>
   );
 };

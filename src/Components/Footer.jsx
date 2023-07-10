@@ -4,15 +4,30 @@ import { MdLocationPin } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <div className="h-fit m-0 w-full bg-black/50 backdrop-blur-sm">
+    <div
+      className="h-fit m-0 w-full bg-black/50"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+    >
       <div className="flex justify-around w-full flex-col sm:flex-row gap-4 pt-10 pl-10 pr-10 sm:pl-16 sm:pr-16 xl:pl-28 xl:pr-28">
         <div className="basis-1/3">
-          <h1 className="pb-4 text-4xl sm:text-5xl 2xl:text-6xl font-bold tracking-wide font-custom-sans uppercase flex  justify-center sm:justify-start">
+          <h1
+            className="pb-4 text-4xl sm:text-5xl 2xl:text-6xl font-bold tracking-wide font-custom-sans uppercase flex  justify-center sm:justify-start"
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+          >
             venue
           </h1>
-          <div className="flex flex-col gap-4 pb-4 items-center text-base sm:items-start sm:text-left">
+          <div
+            className="flex flex-col gap-4 pb-4 items-center text-base sm:items-start sm:text-left"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+            data-aos-easing="ease-in-out"
+          >
             <iframe
-              className=" h-32 w-2/3 sm:w-44 md:h-44 md:w-60 lg:w-72 xl:w-80 2xl:w-96 rounded-lg"
+              className="h-32 w-2/3 sm:w-44 md:h-44 md:w-60 lg:w-72 xl:w-80 2xl:w-96 rounded-lg"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5603.423119488341!2d88.38228609294792!3d22.608739187232796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89d503e06cb7b%3A0xf01fd00a505fde18!2sMohit%20Moitra%20Mancha!5e0!3m2!1sen!2sin!4v1688751883858!5m2!1sen!2sin"
               allowfullscreen=""
               loading="lazy"
@@ -40,10 +55,20 @@ const Footer = () => {
         </div>
         <div className="border-b border-spacing-1 border-white/20 sm:border-none sm:m-0"></div>
         <div className="basis-1/3 pt-4 sm:pt-0">
-          <h1 className="pb-4 text-4xl sm:text-5xl 2xl:text-6xl font-bold tracking-wide font-custom-sans whitespace-nowrap uppercase flex justify-center sm:justify-end sm:text-right">
+          <h1
+            className="pb-4 text-4xl sm:text-5xl 2xl:text-6xl font-bold tracking-wide font-custom-sans whitespace-nowrap uppercase flex justify-center sm:justify-end sm:text-right"
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+          >
             contact us
           </h1>
-          <div className="flex flex-col gap-3 sm:items-end sm:text-right">
+          <div
+            className="flex flex-col gap-3 sm:items-end sm:text-right"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+            data-aos-easing="ease-in-out"
+          >
             <p>
               Prof. Kuntala Das (Convenor)
               <MailTo
@@ -76,7 +101,13 @@ const Footer = () => {
                 74395 06293
               </a>
             </p>
-            <div className="flex justify-center gap-4 pt-2">
+            <div
+              className="flex justify-center gap-4 pt-2"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="800"
+              data-aos-easing="ease-in-out"
+            >
               <a
                 href="https://www.facebook.com/bits2bytes.bit?mibextid=ZbWKwL"
                 target="_blank"
@@ -93,7 +124,12 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="w-full bg-violet-500/30 py-2 text-violet-300 tracking-wide mt-6">
+      <div
+        className="w-full bg-violet-500/30 py-2 text-violet-300 tracking-wide mt-6"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
         <h1 className="text-lg p-1">
           {" "}
           Made with &#10084; by{" "}
