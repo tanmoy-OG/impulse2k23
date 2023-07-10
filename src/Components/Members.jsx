@@ -16,7 +16,7 @@ import { Autoplay, EffectCoverflow, Navigation } from "swiper/modules";
 
 const Members = () => {
   return (
-    <div className="flex flex-col pt-16 pb-20">
+    <div className="flex flex-col pt-16 pb-20" id="members">
       <h1
         className="mb-4 text-4xl sm:text-5xl 2xl:text-6xl font-bold tracking-wide uppercase"
         data-aos="fade-up"
@@ -43,6 +43,7 @@ const Members = () => {
         modules={[Autoplay, EffectCoverflow, Navigation]}
         className="w-full mt-10"
         data-aos="fade-up"
+        data-aos-delay="300"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
       >

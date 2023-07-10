@@ -73,13 +73,13 @@ button:focus-visible {
 } */
 
 body {
-  background-color: #301E3C;
-  background-image: url(/src/assets/band1.jpg);
+  background-color: #301e3c;
+  background-image: url(band1.jpg);
   background-repeat: no-repeat;
   background-size: 120% 120%;
   background-attachment: fixed;
   background-position: center center;
-  background-blend-mode:soft-light;
+  background-blend-mode: soft-light;
   padding: 0px;
   padding-left: 0px;
   animation: shrink 10s infinite alternate;
