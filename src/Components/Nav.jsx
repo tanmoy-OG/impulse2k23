@@ -28,7 +28,7 @@ const Nav = () => {
       <div className="flex justify-between pt-4 pb-4 pl-4 pr-4 backdrop-blur-md">
         <div className="flex justify-center basis-1/4">
           <Link
-            className="text-xl whitespace-nowrap cursor-pointer transition-all duration-200 hover:text-yellow-200"
+            className="text-xl 2xl:text-3xl whitespace-nowrap cursor-pointer transition-all duration-200 hover:text-yellow-200"
             to="home"
             spy={true}
             smooth={true}
@@ -39,7 +39,7 @@ const Nav = () => {
             IMPULSE 2k23
           </Link>
         </div>
-        <div className="flex justify-end basis-1/2 md:hidden">
+        <div className="flex justify-end basis-1/2 lg:hidden">
           <button
             onClick={toggleMenu}
             className="flex justify-center h-fit p-2 rounded-md hover:text-yellow-200 transition-all duration-200"
@@ -48,9 +48,9 @@ const Nav = () => {
             {!isMenuOpen ? <AiOutlineMenu /> : <AiOutlineClose />}
           </button>
         </div>
-        <div className="hidden md:flex md:justify-evenly sm:basis-2/3 lg:basis-1/2">
+        <div className="hidden lg:flex lg:justify-evenly lg:gap-2 lg:basis-1/2">
           <Link
-            className="transition-all duration-200 cursor-pointer hover:text-yellow-200"
+            className="transition-all duration-200 cursor-pointer hover:text-yellow-200 2xl:text-2xl"
             to="about"
             spy={true}
             smooth={true}
@@ -61,7 +61,7 @@ const Nav = () => {
             ABOUT
           </Link>
           <Link
-            className="transition-all duration-200 cursor-pointer hover:text-yellow-200"
+            className="transition-all duration-200 cursor-pointer hover:text-yellow-200 2xl:text-2xl"
             to="events"
             spy={true}
             smooth={true}
@@ -72,7 +72,7 @@ const Nav = () => {
             EVENTS
           </Link>
           <Link
-            className="transition-all duration-200 cursor-pointer hover:text-yellow-200"
+            className="transition-all duration-200 cursor-pointer hover:text-yellow-200 2xl:text-2xl"
             to="members"
             spy={true}
             smooth={true}
@@ -83,7 +83,7 @@ const Nav = () => {
             MEMBERS
           </Link>
           <Link
-            className="transition-all duration-200 cursor-pointer hover:text-yellow-200"
+            className="transition-all duration-200 cursor-pointer hover:text-yellow-200 2xl:text-2xl"
             to="sponsors"
             spy={true}
             smooth={true}
@@ -94,7 +94,7 @@ const Nav = () => {
             SPONSORS
           </Link>
           <Link
-            className="transition-all duration-200 cursor-pointer hover:text-yellow-200"
+            className="transition-all duration-200 cursor-pointer hover:text-yellow-200 2xl:text-2xl"
             to="venue"
             spy={true}
             smooth={true}
@@ -105,7 +105,7 @@ const Nav = () => {
             VENUE
           </Link>
           <Link
-            className="transition-all duration-200 cursor-pointer hover:text-yellow-200"
+            className="transition-all duration-200 cursor-pointer hover:text-yellow-200 2xl:text-2xl"
             to="contactUs"
             spy={true}
             smooth={true}
@@ -154,7 +154,7 @@ const Nav = () => {
         </div>
       </div>
       {isMenuOpen && (
-        <div className="shadow-lg bg-transparent backdrop-blur-md md:hidden w-full absolute">
+        <div className="shadow-lg bg-transparent backdrop-blur-md lg:hidden w-full absolute">
           <div className="flex flex-col px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <Link
               className="transition-all duration-200 cursor-pointer hover:text-yellow-200"

@@ -17,41 +17,41 @@ const Timer = ({ duration }) => {
     let hours = parseInt(totalHours % 24);
     return (
       <div
-        className="flex justify-center"
+        className="flex justify-center 2xl:justify-evenly xl:gap-4"
         data-aos="fade-up"
         data-aos-duration="1000"
         data-aos-delay="500"
         data-aos-easing="ease-in-out"
       >
         <div className="basis-36">
-          <p className="text-5xl sm:text-6xl md:text-7xl xl:text-8xl">
+          <p className="text-5xl sm:text-6xl md:text-7xl xl:text-8xl 2xl:text-9xl">
             {days > 0 ? days : 0}
           </p>
-          <span className="text-xs sm:text-sm lg:text-base xl:text-md">
+          <span className="text-xs sm:text-sm lg:text-base xl:text-lg 2xl:text-xl">
             DAYS
           </span>
         </div>
         <div className="basis-36">
-          <p className="text-5xl sm:text-6xl md:text-7xl xl:text-8xl">
+          <p className="text-5xl sm:text-6xl md:text-7xl xl:text-8xl 2xl:text-9xl">
             {hours > 0 ? hours : 0}
           </p>
-          <span className="text-xs sm:text-sm lg:text-base xl:text-md">
+          <span className="text-xs sm:text-sm lg:text-base xl:text-lg 2xl:text-xl">
             HOURS
           </span>
         </div>
         <div className="basis-36">
-          <p className="text-5xl sm:text-6xl md:text-7xl xl:text-8xl">
+          <p className="text-5xl sm:text-6xl md:text-7xl xl:text-8xl 2xl:text-9xl">
             {minutes > 0 ? minutes : 0}
           </p>
-          <span className="text-xs sm:text-sm lg:text-base xl:text-md">
+          <span className="text-xs sm:text-sm lg:text-base xl:text-lg 2xl:text-xl">
             MINUTES
           </span>
         </div>
         <div className="basis-36">
-          <p className="text-5xl sm:text-6xl md:text-7xl xl:text-8xl">
+          <p className="text-5xl sm:text-6xl md:text-7xl xl:text-8xl 2xl:text-9xl">
             {seconds > 0 ? seconds : 0}
           </p>
-          <span className="text-xs sm:text-sm lg:text-base xl:text-md">
+          <span className="text-xs sm:text-sm lg:text-base xl:text-lg 2xl:text-xl">
             SECONDS
           </span>
         </div>
