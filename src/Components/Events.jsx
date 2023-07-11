@@ -4,20 +4,24 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "../assets/App.css";
-import { EffectCoverflow, Pagination, Navigation, Autoplay } from "swiper/modules";
+import {
+  EffectCoverflow,
+  Pagination,
+  Navigation,
+  Autoplay,
+} from "swiper/modules";
 import EachEvent from "./EachEvent";
 
 const Events = () => {
-
-  const [screensize,setScreenSize] = useState(0);
-  useEffect(()=>{
+  const [screensize, setScreenSize] = useState(0);
+  useEffect(() => {
     setScreenSize(window.innerWidth);
   });
 
   return (
-    <div className="event-parent flex flex-col pt-16 gap-6 lg:gap-10">
+    <div className="event-parent flex flex-col pt-16">
       <h1
-        className="mb-4 text-4xl sm:text-5xl 2xl:text-6xl font-bold tracking-wide uppercase"
+        className="text-4xl sm:text-5xl 2xl:text-6xl font-bold tracking-wide uppercase"
         data-aos="fade-up"
         data-aos-easing="ease-in-out"
       >
@@ -27,12 +31,12 @@ const Events = () => {
         effect={"coverflow"}
         slidesPerView={"auto"}
         spaceBetween={0}
-        navigation={(screensize > 400)?true:false}
+        navigation={screensize > 400 ? true : false}
         centeredSlides={true}
-        autoplay={{
-          delay: 4000,
-          disableOnInteraction: true,
-        }}
+        // autoplay={{
+        //   delay: 4000,
+        //   disableOnInteraction: true,
+        // }}
         coverflowEffect={{
           rotate: 100,
           stretch: 0,
