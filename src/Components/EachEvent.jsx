@@ -1,12 +1,14 @@
 const EachEvent = ({ pic, desc, time, fees, show }) => {
   return (
-    <div style={{backgroundImage: `url(${pic})`}} 
-     className="bg-no-repeat bg-cover bg-center flex flex-col justify-end bg-sky-950 rounded-xl h-32 350px:h-52 sm:h-96 w-2/3 lg:w-1/2 m-auto p-0 md:my-10 transition-all duration-1000 group"
-     >
-      <div className="flex flex-col w-full text-left gap-6 bg-black/70 backdrop-blur-lg px-5 group-hover:py-5 h-0 group-hover:h-96 transition-all duration-1000 rounded-xl overflow-auto overflow-x-hidden">
-        <p className="text-xs">{desc}</p>
+    <div
+      style={{ backgroundImage: `url(${pic})` }}
+      className="bg-no-repeat bg-cover bg-center flex flex-col justify-end bg-sky-950 rounded-xl h-32 350px:h-52 sm:h-96 w-2/3 lg:w-1/2 m-auto p-0 md:my-2 transition-all duration-1000 group"
+    >
+      <div className="flex flex-col w-full text-left bg-black/70 backdrop-blur-lg px-5 group-hover:py-5 h-0 group-hover:h-96 transition-all duration-1000 rounded-xl overflow-auto overflow-x-hidden">
+        <h1 className="text-sm uppercase font-bold tracking-wider">about the event</h1>
+        <p className="text-xs tracking-wide pb-5">{desc}</p>
         {show ? (
-          <div className="w-full flex flex-col md:flex-row justify-between items-start gap-5">
+          <div className="w-full flex flex-col md:flex-row justify-between items-start gap-5 pb-5">
             <div className="flex flex-col w-fit gap-3">
               <h1 className="font-bold uppercase tracking-widest text-white text-xs">
                 {time}
