@@ -17,7 +17,29 @@ const Events = () => {
   useEffect(() => {
     setScreenSize(window.innerWidth);
   });
-
+  const rule0 = [
+    "• YOU MUST CARRY YOUR COLLEGE ID CARD",
+    "• MINIMUM NO. OF PARTICIPANTS IN A TEAM - 6, MAXIMUM NO. OF PARTICIPANTS IN A TEAM - 10 (NO SOLO OR DUET PERFORMANCE)",
+    "• PARTICIPANTS HAVE TO BRING THEIR OWN PROPS (NEED TO AWARE US BEFOREHAND) AND MUSIC",
+    "• TIME LIMIT : 1+5 MINS FOR EACH TEAM",
+    "• NO RESTRICTIONS TO DANCE FORMS",
+    "• DANCE THAT REPRESENTS OR HURTS ANY POLITICAL OR RELIGIOUS SENTIMENTS, ARE NOT ALLOWED",
+    "• THE TRACK NEED TO BE SUBMITTED BEFORE 14TH JULY",
+    "• PARTICIPATION IS LIMITED TO 1 TEAM FROM EACH COLLEGE",
+    "• IT IS COMPULSORY FOR THE STUDENTS TO BRING THEIR RESPECTIVE COLLEGE IDENTITY CARDS.",
+  ];
+  const rule1 = [
+    "• YOU MUST CARRY YOUR COLLEGE ID CARD",
+    "• SOLO PERFORMANCE ( +1 MUSICIAN IS ALLOWED)",
+    "• TIME LIMIT: 1+4 MINS (INCLUDING STAGE SET UP)",
+    "• MUST BE A BENGALI/HINDI/ENGLISH SONG",
+    "• ORIGINAL COMPOSITIONS ARE WELCOMED",
+    "• NO INSTRUMENTS WILL BE PROVIDED BY THE ORGANIZERS",
+    "• PARTICIPANTS CANNOT USE KARAOKE",
+    "• USE OF ANY VULGAR WORDS OR ANY IMPROPER ACTION DURING THE PERFORMANCE WILL LEAD TO DISQUALIFICATION OF THE PARTICIPANT IMMEDIATELY",
+    "",
+  ];
+  const rule2 = ["", "", "", "", "", "", "", "", ""];
   return (
     <div className="event-parent flex flex-col pt-16">
       <h1
@@ -47,7 +69,7 @@ const Events = () => {
         pagination={true}
         modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
         // className="mySwiper"
-        className=" w-full mt-10 sm:mt-0 bg-yellow-500"
+        className=" w-full mt-10 sm:mt-0"
       >
         <SwiperSlide>
           <EachEvent
@@ -66,6 +88,7 @@ const Events = () => {
             CAMARADERIE AMONG PARTICIPATING COLLEGES."
             time="LAST DATE OF REGISTRATION : 14TH JULY"
             fees="REGISTRATION FEE : RS.600"
+            rule={rule0}
             show={true}
           />
         </SwiperSlide>
@@ -90,6 +113,7 @@ const Events = () => {
             HARMONIES, AND THE CELEBRATION OF MUSICAL TALENT"
             time="LAST DATE OF REGISTRATION : 14TH JULY"
             fees="REGISTRATION FEE : RS.100"
+            rule={rule1}
             show={true}
           />
         </SwiperSlide>
@@ -108,6 +132,7 @@ const Events = () => {
             IS A PLATFORM FOR STUDENTS TO EMBRACE THE
             WORLD OF FASHION AND MAKE A BOLD
             STATEMENT."
+            rule={rule2}
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -125,6 +150,7 @@ const Events = () => {
             IMMERSIVE STAGE EXPERIENCE THAT WILL
             CAPTIVATE YOUR SENSES AND LEAVE A LASTING
             IMPRESSION."
+            rule={rule2}
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -139,6 +165,7 @@ const Events = () => {
             ELOQUENT WORDSMITHS SHOWCASE THEIR
             BRILLIANCE AND SET THE STAGE ABLAZE WITH
             THEIR LITERARY PROWESS."
+            rule={rule2}
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -160,6 +187,7 @@ const Events = () => {
             STEP, SPIN, AND LIFT RADIATES A PROFOUND
             CONNECTION BETWEEN PARTNERS, TRANSCENDING
             BOUNDARIES AND INSPIRING AWE."
+            rule={rule2}
           />
         </SwiperSlide>
       </Swiper>
