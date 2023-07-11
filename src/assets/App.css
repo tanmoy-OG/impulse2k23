@@ -40,7 +40,7 @@
 
 /* -------------------------------------- */
 
-.event-parent {
+/* .event-parent {
   height: auto;
   width: 100%;
   position: relative;
@@ -48,9 +48,9 @@
   justify-content: center;
   align-items: center;
   padding: 5px;
-}
+} */
 
-.event-parent > .swiper {
+/* .event-parent > .swiper {
   width: 100%;
   border-radius: 10px;
 }
@@ -60,4 +60,4 @@
   background-size: cover;
   width: fit-content;
   height: fit-content;
-}
+} */

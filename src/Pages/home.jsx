@@ -19,7 +19,7 @@ const Home = () => {
     return totalRemainingTime > 0 ? totalRemainingTime : 0;
   };
   return (
-    <div className="absolute top-0 left-0 w-full h-fit text-violet-200">
+    <div className="absolute top-0 left-0 w-full h-fit text-violet-200 select-none">
       <object.Nav />
       <object.Present duration={time()} />
       <object.Aliferous />
