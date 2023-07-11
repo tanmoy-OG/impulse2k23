@@ -37,11 +37,11 @@ const Footer = () => {
                     (near Belgachia Metro st.), Kolkata, 700037
                   </p>
                   <p className="flex flex-wrap">West Bengal, India</p>
+                  <MailTo
+                    label="bitimpulse2023@gmail.com"
+                    mailto="mailto:bitimpulse2023@gmail.com"
+                  />
                 </div>
-                {/* <MailTo
-                  label="bits2bytes.bittechno@gmail.com"
-                  mailto="mailto:bits2bytes.bittechno@gmail.com"
-                /> */}
               </div>
             </div>
           </div>
@@ -88,16 +88,10 @@ const Footer = () => {
               </a>
             </p>
             <div className="flex justify-center gap-4 pt-2">
-              <a
-                href="#"
-                target="_blank"
-              >
+              <a href="https://www.facebook.com/Impulse2020" target="_blank">
                 <FiFacebook className="text-3xl hover:text-rose-500 transition-all duration-300" />
               </a>
-              <a
-                href="#"
-                target="_blank"
-              >
+              <a href="https://instagram.com/bit_impulse2023" target="_blank">
                 <FiInstagram className="text-3xl hover:text-rose-500 transition-all duration-300" />
               </a>
             </div>

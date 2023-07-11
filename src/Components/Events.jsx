@@ -70,6 +70,10 @@ const Events = () => {
         modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
         // className="mySwiper"
         className=" w-full mt-10 sm:mt-0"
+        data-aos="fade-up"
+        data-aos-delay="300"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
       >
         <SwiperSlide>
           <EachEvent

@@ -2,7 +2,7 @@ const EachEvent = ({ pic, desc, time, fees, rule, show }) => {
   return (
     <div
       style={{ backgroundImage: `url(${pic})` }}
-      className="bg-no-repeat bg-contain bg-center flex flex-col justify-end bg-transparent rounded-xl h-60 350px:h-52 sm:h-96 w-5/6 sm:w-3/4 lg:w-2/3 m-auto mb-10 p-0 md:my-10 transition-all duration-1000 group"
+      className="bg-no-repeat bg-contain bg-center flex flex-col justify-end bg-transparent rounded-xl h-96  sm:h-96 w-5/6 sm:w-3/4 lg:w-2/3 m-auto mb-10 p-0 md:my-10 transition-all duration-1000 group"
     >
       <div className="flex flex-col w-full text-left gap-6 bg-black/70 backdrop-blur-lg px-5 group-hover:py-5 h-0 group-hover:h-96 transition-all duration-1000 rounded-xl overflow-auto overflow-x-hidden">
         {show ? (

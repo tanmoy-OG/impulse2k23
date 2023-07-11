@@ -85,7 +85,16 @@ const Members = () => {
         </SwiperSlide>
         <SwiperSlide className="h-fit w-fit rounded-2xl">
           <CardUi
-            pic={"/team/ags2.jpeg"}
+            pic={"/team/ags2.jpg"}
+            name={"Shivam Sinha"}
+            designation={"Asst General Secretary"}
+            face={"https://www.facebook.com/profile.php?id=100009584351756"}
+            insta={"https://instagram.com/somnathcrash"}
+          />
+        </SwiperSlide>
+        <SwiperSlide className="h-fit w-fit rounded-2xl">
+          <CardUi
+            pic={"/team/ags3.jpeg"}
             name={"Shivam Sinha"}
             designation={"Asst General Secretary"}
             git={"https://github.com/shivam-0077"}
