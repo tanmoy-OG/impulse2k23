@@ -154,8 +154,8 @@ const Nav = () => {
         </div>
       </div>
       {isMenuOpen && (
-        <div className="shadow-lg bg-transparent backdrop-blur-md lg:hidden w-full absolute">
-          <div className="flex flex-col px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <div className="shadow-lg bg-transparent backdrop-blur-md md:hidden w-full absolute">
+          <div className="flex flex-col px-2 pt-2 pb-3 space-y-1 sm:px-3 gap-2">
             <Link
               className="transition-all duration-200 cursor-pointer hover:text-yellow-200"
               to="about"

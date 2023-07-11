@@ -17,7 +17,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" Component={Home} />
-      {/* <Route path="*" Component={ErrorPage} /> */}
+      {/* <Route path="*" Component={ErrorPage} /> */}  
     </Routes>
   );
 }
