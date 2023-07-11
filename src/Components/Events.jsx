@@ -43,7 +43,7 @@ const Events = () => {
         pagination={true}
         modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
         // className="mySwiper"
-        className="w-full mt-10"
+        className=" w-full mt-10 sm:mt-0 bg-yellow-500"
       >
         <SwiperSlide>
           <EachEvent
@@ -61,7 +61,7 @@ const Events = () => {
             STYLES WHILE FOSTERING FRIENDLY COMPETITION AND
             CAMARADERIE AMONG PARTICIPATING COLLEGES."
             time="LAST DATE OF REGISTRATION : 14TH JULY"
-            fees="REGISTRATION FEE :- RS.600"
+            fees="REGISTRATION FEE : RS.600"
             show={true}
           />
         </SwiperSlide>
@@ -85,7 +85,7 @@ const Events = () => {
             FILLED WITH CAPTIVATING MELODIES, BREATHTAKING
             HARMONIES, AND THE CELEBRATION OF MUSICAL TALENT"
             time="LAST DATE OF REGISTRATION : 14TH JULY"
-            fees="REGISTRATION FEE :- RS.100"
+            fees="REGISTRATION FEE : RS.100"
             show={true}
           />
         </SwiperSlide>
