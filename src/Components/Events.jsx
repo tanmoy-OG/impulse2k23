@@ -43,7 +43,7 @@ const Events = () => {
   return (
     <div className="event-parent flex flex-col pt-16 font-serif">
       <h1
-        className="text-4xl sm:text-5xl 2xl:text-6xl font-bold tracking-wide uppercase"
+        className="mb-8 text-4xl sm:text-5xl 2xl:text-6xl font-bold tracking-wide uppercase"
         data-aos="fade-up"
         data-aos-easing="ease-in-out"
       >
@@ -55,10 +55,10 @@ const Events = () => {
         spaceBetween={0}
         navigation={screensize > 400 ? true : false}
         centeredSlides={true}
-        // autoplay={{
-        //   delay: 4000,
-        //   disableOnInteraction: true,
-        // }}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: true,
+        }}
         coverflowEffect={{
           rotate: 100,
           stretch: 0,
@@ -77,7 +77,7 @@ const Events = () => {
       >
         <SwiperSlide>
           <EachEvent
-            pic={"ramp-on-fire.jpg"}
+            pic={"/events/bob.jpg"}
             desc="BATTLE OF BEATS IS A SHOWCASE OF INCREDIBLE DANCE
             TALENT AND AN EMBODIMENT OF THE TRANSFORMATIVE
             POWER OF MOVEMENT AND ARTISTIC EXPRESSION. HERE
@@ -98,7 +98,7 @@ const Events = () => {
         </SwiperSlide>
         <SwiperSlide>
           <EachEvent
-            pic={"ramp-on-fire.jpg"}
+            pic={"/events/vip.jpeg"}
             desc="VOICE OF IMPULSE BRINGS TOGETHER THE BEST OF
             MUSICAL TALENT, FOSTERING CREATIVITY,
             COLLABORATION, AND A LOVE FOR MELODIES THAT
@@ -123,7 +123,7 @@ const Events = () => {
         </SwiperSlide>
         <SwiperSlide>
           <EachEvent
-            pic={"ramp-on-fire.jpg"}
+            pic={"/events/rof.png"}
             desc="WITNESS A GLAMOROUS SHOWCASE OF
             FASHION, CONFIDENCE, AND POISE AS RAMP-ON-
             FIRE TAKES CENTER STAGE. THIS DAZZLING
@@ -141,7 +141,7 @@ const Events = () => {
         </SwiperSlide>
         <SwiperSlide>
           <EachEvent
-            pic={"ramp-on-fire.jpg"}
+            pic={"/events/d.jpg"}
             desc="IMMERSE YOURSELF IN THE WORLD OF THEATER
             AS WE BRING YOU AN EXTRAORDINARY
             THEATRICAL EXPERIENCE THAT WILL LEAVE YOU
@@ -157,9 +157,9 @@ const Events = () => {
             rule={rule2}
           />
         </SwiperSlide>
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <EachEvent
-            pic={"ramp-on-fire.jpg"}
+            pic={"/events/vip.jpeg"}
             desc="RECITATION IS A HIGHLY ANTICIPATED EVENT
             AND IS AN OPPORTUNITY FOR STUDENTS
             FROM ALL DEPARTMENTS TO UNLEASH THEIR
@@ -171,10 +171,10 @@ const Events = () => {
             THEIR LITERARY PROWESS."
             rule={rule2}
           />
-        </SwiperSlide>
+        </SwiperSlide> */}
         <SwiperSlide>
           <EachEvent
-            pic={"ramp-on-fire.jpg"}
+            pic={"/events/vip.jpeg"}
             desc="IN THE ENCHANTING EVENING OF COUPLE DANCE
             AT OUR UPCOMING COLLEGE CULTURAL EVENT
             FEST - IMPULSE 2K23,AN EPITOME OF GRACE,
