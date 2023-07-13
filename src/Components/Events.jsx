@@ -41,7 +41,7 @@ const Events = () => {
   ];
   const rule2 = ["", "", "", "", "", "", "", "", ""];
   return (
-    <div className="event-parent flex flex-col pt-16">
+    <div className="event-parent flex flex-col pt-16 font-serif">
       <h1
         className="text-4xl sm:text-5xl 2xl:text-6xl font-bold tracking-wide uppercase"
         data-aos="fade-up"
@@ -70,6 +70,10 @@ const Events = () => {
         modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
         // className="mySwiper"
         className=" w-full mt-10 sm:mt-0"
+        data-aos="fade-up"
+        data-aos-delay="300"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
       >
         <SwiperSlide>
           <EachEvent

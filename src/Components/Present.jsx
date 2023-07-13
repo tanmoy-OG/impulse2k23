@@ -7,13 +7,13 @@ const Present = ({ duration }) => {
       id="home"
     >
       <h1
-        className="text-3xl sm:text-5xl xl:text-5xl 2xl:text-7xl font-bold tracking-wide uppercase text-pink-600"
+        className="text-3xl sm:text-5xl xl:text-5xl 2xl:text-7xl font-bold tracking-wide uppercase text-pink-600 z-20 font-serif"
         data-aos="fade-up"
       >
         BENGAL INSTITUTE OF TECHNOLOGY
       </h1>
       <h1
-        className="text-2xl sm:text-3xl 2xl:text-5xl text-sky-600"
+        className="text-2xl sm:text-3xl 2xl:text-5xl text-sky-600 z-20 font-serif italic"
         data-aos="fade-up"
       >
         PRESENTS
@@ -22,7 +22,7 @@ const Present = ({ duration }) => {
         <img
           src="logo.png"
           alt="Impulse2k23 Logo"
-          className="w-3/4 lg:w-1/3 xl:w-1/4 2xl:w-3/7"
+          className="w-3/4 lg:w-1/3 xl:w-1/4 2xl:w-3/7 z-20"
         />
       </div>
       <Timer duration={duration} />

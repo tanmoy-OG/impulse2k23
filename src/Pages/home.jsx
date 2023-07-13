@@ -1,5 +1,6 @@
 import object from "../Components";
 import "../Components/hovertree";
+import Particle from "../Components/Particle"
 
 const Home = () => {
   const time = () => {
@@ -30,6 +31,7 @@ const Home = () => {
         <object.Sponsors />
         <object.Footer />
       </div>
+      <Particle />
       {/* <canvas
         className="fixed left-0 top-0 w-full h-screen -z-10"
         id="canvas"

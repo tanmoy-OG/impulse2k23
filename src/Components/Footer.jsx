@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="flex justify-around w-full flex-col sm:flex-row gap-4 pt-10 pl-10 pr-10 sm:pl-16 sm:pr-16 xl:pl-28 xl:pr-28">
         <div className="basis-1/3">
           <h1
-            className="pb-4 text-4xl sm:text-5xl 2xl:text-6xl font-bold tracking-wide font-custom-sans uppercase flex  justify-center sm:justify-start"
+            className="pb-4 text-4xl sm:text-5xl 2xl:text-6xl font-bold tracking-wide  font-serif uppercase flex  justify-center sm:justify-start"
             id="venue"
           >
             venue
@@ -37,11 +37,11 @@ const Footer = () => {
                     (near Belgachia Metro st.), Kolkata, 700037
                   </p>
                   <p className="flex flex-wrap">West Bengal, India</p>
+                  <MailTo
+                    label="bitimpulse2023@gmail.com"
+                    mailto="mailto:bitimpulse2023@gmail.com"
+                  />
                 </div>
-                {/* <MailTo
-                  label="bits2bytes.bittechno@gmail.com"
-                  mailto="mailto:bits2bytes.bittechno@gmail.com"
-                /> */}
               </div>
             </div>
           </div>
@@ -49,7 +49,7 @@ const Footer = () => {
         <div className="border-b border-spacing-1 border-white/20 sm:border-none sm:m-0"></div>
         <div className="basis-1/3 pt-4 sm:pt-0">
           <h1
-            className="pb-4 text-4xl sm:text-5xl 2xl:text-6xl font-bold tracking-wide font-custom-sans whitespace-nowrap uppercase flex justify-center sm:justify-end sm:text-right"
+            className="pb-4 text-4xl sm:text-5xl 2xl:text-6xl font-bold tracking-wide font-serif whitespace-nowrap uppercase flex justify-center sm:justify-end sm:text-right"
             id="contactUs"
           >
             contact us
@@ -88,16 +88,10 @@ const Footer = () => {
               </a>
             </p>
             <div className="flex justify-center gap-4 pt-2">
-              <a
-                href="#"
-                target="_blank"
-              >
+              <a href="https://www.facebook.com/Impulse2020" target="_blank">
                 <FiFacebook className="text-3xl hover:text-rose-500 transition-all duration-300" />
               </a>
-              <a
-                href="#"
-                target="_blank"
-              >
+              <a href="https://instagram.com/bit_impulse2023" target="_blank">
                 <FiInstagram className="text-3xl hover:text-rose-500 transition-all duration-300" />
               </a>
             </div>
