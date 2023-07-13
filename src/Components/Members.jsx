@@ -18,7 +18,7 @@ const Members = () => {
   return (
     <div className="flex flex-col pt-16 pb-20" id="members">
       <h1
-        className="mb-4 text-4xl sm:text-5xl 2xl:text-6xl font-bold tracking-wide uppercase"
+        className="mb-4 text-4xl sm:text-5xl 2xl:text-6xl font-bold tracking-wide uppercase font-serif"
         data-aos="fade-up"
         data-aos-easing="ease-in-out"
       >
@@ -143,7 +143,7 @@ const CardUi = (props) => {
           alt=""
         />
       </div>
-      <h1 className="text-xs text-violet-950 tracking-wide mb-0 uppercase">
+      <h1 className="text-xs text-violet-950 tracking-wide mb-0 uppercase italic font-serif">
         {props.designation}
       </h1>
       {/* <img className="w-60 mt-0 mx-auto" src="divider.png" alt="" /> */}

@@ -24,34 +24,34 @@ const Timer = ({ duration }) => {
         data-aos-easing="ease-in-out"
       >
         <div className="basis-36">
-          <p className="text-5xl sm:text-6xl md:text-7xl xl:text-8xl 2xl:text-9xl">
+          <p className="text-5xl sm:text-6xl md:text-7xl xl:text-8xl 2xl:text-9xl z-20">
             {days > 0 ? days : 0}
           </p>
-          <span className="text-xs sm:text-sm lg:text-base xl:text-lg 2xl:text-xl">
+          <span className="text-xs sm:text-sm lg:text-base xl:text-lg 2xl:text-xl z-20">
             DAYS
           </span>
         </div>
         <div className="basis-36">
-          <p className="text-5xl sm:text-6xl md:text-7xl xl:text-8xl 2xl:text-9xl">
+          <p className="text-5xl sm:text-6xl md:text-7xl xl:text-8xl 2xl:text-9xl z-20">
             {hours > 0 ? hours : 0}
           </p>
-          <span className="text-xs sm:text-sm lg:text-base xl:text-lg 2xl:text-xl">
+          <span className="text-xs sm:text-sm lg:text-base xl:text-lg 2xl:text-xl z-20">
             HOURS
           </span>
         </div>
         <div className="basis-36">
-          <p className="text-5xl sm:text-6xl md:text-7xl xl:text-8xl 2xl:text-9xl">
+          <p className="text-5xl sm:text-6xl md:text-7xl xl:text-8xl 2xl:text-9xl z-20">
             {minutes > 0 ? minutes : 0}
           </p>
-          <span className="text-xs sm:text-sm lg:text-base xl:text-lg 2xl:text-xl">
+          <span className="text-xs sm:text-sm lg:text-base xl:text-lg 2xl:text-xl z-20">
             MINUTES
           </span>
         </div>
         <div className="basis-36">
-          <p className="text-5xl sm:text-6xl md:text-7xl xl:text-8xl 2xl:text-9xl">
+          <p className="text-5xl sm:text-6xl md:text-7xl xl:text-8xl 2xl:text-9xl z-20">
             {seconds > 0 ? seconds : 0}
           </p>
-          <span className="text-xs sm:text-sm lg:text-base xl:text-lg 2xl:text-xl">
+          <span className="text-xs sm:text-sm lg:text-base xl:text-lg 2xl:text-xl z-20">
             SECONDS
           </span>
         </div>

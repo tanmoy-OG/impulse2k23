@@ -41,7 +41,7 @@ const Events = () => {
   ];
   const rule2 = ["", "", "", "", "", "", "", "", ""];
   return (
-    <div className="event-parent flex flex-col pt-16">
+    <div className="event-parent flex flex-col pt-16 font-serif">
       <h1
         className="text-4xl sm:text-5xl 2xl:text-6xl font-bold tracking-wide uppercase"
         data-aos="fade-up"

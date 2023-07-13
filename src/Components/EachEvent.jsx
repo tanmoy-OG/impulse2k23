@@ -17,7 +17,7 @@ const EachEvent = ({ pic, desc, time, fees, rule, show }) => {
             </div>
             <a
               href="#"
-              className="bg-sky/20 text-green-800 hover:text-lime-200 font-bold tracking-widest bg-lime-500 hover:bg-green-600 p-2 rounded-xl cursor-pointer text-xs transition-all duration-200"
+              className="bg-sky/20 text-green-800 hover:text-lime-200 font-bold tracking-widest bg-lime-500 hover:bg-green-600 p-2 rounded-xl cursor-pointer text-xs transition-all duration-200 font-sans"
             >
               REGISTER
             </a>
