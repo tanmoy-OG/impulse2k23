@@ -77,6 +77,10 @@ const Footer = () => {
               >
                 90739 99922
               </a>
+              <MailTo
+                label="shrayan02@gmail.com"
+                mailto="mailto:shrayan02@gmail.com"
+              />
             </p>
             <p>
               Pratim Sen Sharma (CS) :{" "}
