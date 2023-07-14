@@ -53,8 +53,8 @@ const Events = () => {
         effect={"coverflow"}
         slidesPerView={"auto"}
         spaceBetween={0}
-        navigation={screensize > 400 ? true : false}
-        // navigation={true}
+        // navigation={screensize > 400 ? true : false}
+        navigation={true}
         centeredSlides={true}
         autoplay={{
           delay: 3000,
