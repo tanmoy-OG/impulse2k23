@@ -37,27 +37,3 @@
 #navbar div a:hover {
   text-shadow: 0 0 10px lightgoldenrodyellow;
 }
-
-/* -------------------------------------- */
-
-/* .event-parent {
-  height: auto;
-  width: 100%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
-} */
-
-/* .event-parent > .swiper {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.event-parent > .swiper > .swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: fit-content;
-  height: fit-content;
-} */

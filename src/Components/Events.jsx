@@ -53,7 +53,8 @@ const Events = () => {
         effect={"coverflow"}
         slidesPerView={"auto"}
         spaceBetween={0}
-        navigation={screensize > 400 ? true : false}
+        // navigation={screensize > 400 ? true : false}
+        navigation={true}
         centeredSlides={true}
         autoplay={{
           delay: 3000,
@@ -77,7 +78,7 @@ const Events = () => {
       >
         <SwiperSlide>
           <EachEvent
-            pic={"/events/bob.jpg"}
+            pic={"/events/bob.webp"}
             desc="BATTLE OF BEATS IS A SHOWCASE OF INCREDIBLE DANCE
             TALENT AND AN EMBODIMENT OF THE TRANSFORMATIVE
             POWER OF MOVEMENT AND ARTISTIC EXPRESSION. HERE
@@ -94,11 +95,12 @@ const Events = () => {
             fees="REGISTRATION FEE : RS.600"
             rule={rule0}
             show={true}
+            link="https://forms.gle/Fp72Yapvrgft7mwn9"
           />
         </SwiperSlide>
         <SwiperSlide>
           <EachEvent
-            pic={"/events/vip.jpeg"}
+            pic={"/events/vip.webp"}
             desc="VOICE OF IMPULSE BRINGS TOGETHER THE BEST OF
             MUSICAL TALENT, FOSTERING CREATIVITY,
             COLLABORATION, AND A LOVE FOR MELODIES THAT
@@ -119,11 +121,12 @@ const Events = () => {
             fees="REGISTRATION FEE : RS.100"
             rule={rule1}
             show={true}
+            link="https://forms.gle/59aAgPQtK31qXsAf9"
           />
         </SwiperSlide>
         <SwiperSlide>
           <EachEvent
-            pic={"/events/rof.png"}
+            pic={"/events/rof.webp"}
             desc="WITNESS A GLAMOROUS SHOWCASE OF
             FASHION, CONFIDENCE, AND POISE AS RAMP-ON-
             FIRE TAKES CENTER STAGE. THIS DAZZLING
@@ -141,7 +144,7 @@ const Events = () => {
         </SwiperSlide>
         <SwiperSlide>
           <EachEvent
-            pic={"/events/d.jpg"}
+            pic={"/events/d.webp"}
             desc="IMMERSE YOURSELF IN THE WORLD OF THEATER
             AS WE BRING YOU AN EXTRAORDINARY
             THEATRICAL EXPERIENCE THAT WILL LEAVE YOU
@@ -174,7 +177,7 @@ const Events = () => {
         </SwiperSlide> */}
         <SwiperSlide>
           <EachEvent
-            pic={"/events/vip.jpeg"}
+            pic={"/events/cd.webp"}
             desc="IN THE ENCHANTING EVENING OF COUPLE DANCE
             AT OUR UPCOMING COLLEGE CULTURAL EVENT
             FEST - IMPULSE 2K23,AN EPITOME OF GRACE,

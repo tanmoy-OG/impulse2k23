@@ -8,9 +8,9 @@ const Sponsors = () => {
       >
         Our Sponsors
       </h1>
-      <div className="flex justify-evenly flex-wrap gap-10 mt-20">
+      <div className="flex justify-evenly flex-wrap gap-10 my-20">
         <img
-          src="/sponsors/sponsor1.png"
+          src="/sponsors/sponsor1.webp"
           alt=""
           className="w-60 sm:w-1/2 md:w-1/4 lg:w-1/5"
           data-aos="fade-up"
