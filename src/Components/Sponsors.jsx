@@ -6,7 +6,7 @@ const Sponsors = () => {
         data-aos="fade-up"
         data-aos-easing="ease-in-out"
       >
-        Our Sponsors
+        radio partner
       </h1>
       <div className="flex justify-evenly flex-wrap gap-10 my-20">
         <img

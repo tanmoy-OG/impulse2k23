@@ -26,7 +26,7 @@ const Members = () => {
         data-aos="fade-up"
         data-aos-easing="ease-in-out"
       >
-        Core Team
+        Core Committee
       </h1>
       <Swiper
         effect={"coverflow"}
@@ -70,7 +70,7 @@ const Members = () => {
         <SwiperSlide className="h-fit w-fit rounded-2xl">
           <CardUi
             pic={"/team/gs.webp"}
-            name={"Shreyan Dey"}
+            name={"Shrayan Dey"}
             designation={"General Secretary"}
             link={"https://www.linkedin.com/in/shrayan-dey-a166951bb"}
             face={"https://www.facebook.com/SHRAYAN.dey.50552"}
@@ -90,7 +90,7 @@ const Members = () => {
         <SwiperSlide className="h-fit w-fit rounded-2xl">
           <CardUi
             pic={"/team/ags2.webp"}
-            name={"Shivam Sinha"}
+            name={"Somnath Banerjee"}
             designation={"Asst General Secretary"}
             face={"https://www.facebook.com/profile.php?id=100009584351756"}
             insta={"https://instagram.com/somnathcrash"}
