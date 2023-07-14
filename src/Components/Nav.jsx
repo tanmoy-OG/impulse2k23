@@ -22,7 +22,7 @@ const Nav = () => {
 
   return (
     <nav
-      className="sticky z-10 text-violet-300 tracking-wider shadow-lg transition-all duration-500"
+      className="sticky z-30 text-violet-300 tracking-wider shadow-lg transition-all duration-500"
       id="navbar"
     >
       <div className="flex justify-between pt-4 pb-4 pl-4 pr-4 backdrop-blur-md">
@@ -115,42 +115,6 @@ const Nav = () => {
           >
             CONTACT US
           </Link>
-          {/* <a
-            href="#about"
-            className="transition-all duration-200 hover:text-yellow-200"
-          >
-            ABOUT
-          </a> */}
-          {/* <a
-            href="#members"
-            className="transition-all duration-200 hover:text-yellow-200"
-          >
-            EVENTS
-          </a>
-          <a
-            href="#members"
-            className="transition-all duration-200 hover:text-yellow-200"
-          >
-            MEMBERS
-          </a>
-          <a
-            href="#sponsors"
-            className="transition-all duration-200 hover:text-yellow-200"
-          >
-            SPONSORS
-          </a>
-          <a
-            href="#venue"
-            className="transition-all duration-200 hover:text-yellow-200"
-          >
-            VENUE
-          </a>
-          <a
-            href="#contactUs"
-            className="transition-all duration-200 hover:text-yellow-200"
-          >
-            CONTACT US
-          </a> */}
         </div>
       </div>
       {isMenuOpen && (

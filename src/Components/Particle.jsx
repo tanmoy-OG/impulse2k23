@@ -3,11 +3,6 @@ import { loadFull } from "tsparticles";
 
 const Particle = () => {
   const particlesInit = async (main) => {
-    // console.log(main);
-
-    // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
     await loadFull(main);
   };
 
@@ -139,7 +134,7 @@ const Particle = () => {
             overlap: { enable: true, retries: 0 },
           },
           color: {
-            value: "#06b6d4",
+            value: "#22d3ee",
             animation: {
               h: {
                 count: 0,
@@ -242,8 +237,8 @@ const Particle = () => {
           },
           shape: { close: true, fill: true, options: {}, type: "circle" },
           size: {
-            random: { enable: true, minimumValue: 0 },
-            value: { min: 0, max: 4 },
+            random: { enable: true, minimumValue: 2 },
+            value: { min: 2, max: 4 },
             animation: {
               count: 0,
               enable: true,
@@ -375,6 +370,6 @@ const Particle = () => {
       }}
     />
   );
-}
+};
 
 export default Particle;

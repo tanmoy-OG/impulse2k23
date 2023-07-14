@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
   FaGithub,
@@ -15,6 +15,10 @@ import "swiper/css/navigation";
 import { Autoplay, EffectCoverflow, Navigation } from "swiper/modules";
 
 const Members = () => {
+  const [screensize, setScreenSize] = useState(0);
+  useEffect(() => {
+    setScreenSize(window.innerWidth);
+  });
   return (
     <div className="flex flex-col pt-16 pb-20" id="members">
       <h1
@@ -28,7 +32,7 @@ const Members = () => {
         effect={"coverflow"}
         slidesPerView={"auto"}
         spaceBetween={0}
-        navigation={true}
+        navigation={screensize > 400 ? true : false}
         centeredSlides={true}
         autoplay={{
           delay: 4000,
@@ -49,7 +53,7 @@ const Members = () => {
       >
         <SwiperSlide className="h-fit w-fit rounded-2xl">
           <CardUi
-            pic={"/team/convenor.jpeg"}
+            pic={"/team/convenor.webp"}
             name={"Prof. Kuntala Das"}
             designation={"convener"}
             face={"https://www.facebook.com/kuntala.das.77"}
@@ -58,14 +62,14 @@ const Members = () => {
         </SwiperSlide>
         <SwiperSlide className="h-fit w-fit rounded-2xl">
           <CardUi
-            pic={"/team/coordinator.jpeg"}
+            pic={"/team/coordinator.webp"}
             name={"Dr. Madhusudan Debnath"}
             designation={"coordinator"}
           />
         </SwiperSlide>
         <SwiperSlide className="h-fit w-fit rounded-2xl">
           <CardUi
-            pic={"/team/gs.jpeg"}
+            pic={"/team/gs.webp"}
             name={"Shreyan Dey"}
             designation={"General Secretary"}
             link={"https://www.linkedin.com/in/shrayan-dey-a166951bb"}
@@ -75,7 +79,7 @@ const Members = () => {
         </SwiperSlide>
         <SwiperSlide className="h-fit w-fit rounded-2xl">
           <CardUi
-            pic={"/team/ags1.jpeg"}
+            pic={"/team/ags1.webp"}
             name={"Simran Samanta"}
             designation={"Asst General Secretary"}
             link={"https://www.linkedin.com/in/simran-samanta-563993223"}
@@ -85,7 +89,7 @@ const Members = () => {
         </SwiperSlide>
         <SwiperSlide className="h-fit w-fit rounded-2xl">
           <CardUi
-            pic={"/team/ags2.jpg"}
+            pic={"/team/ags2.webp"}
             name={"Shivam Sinha"}
             designation={"Asst General Secretary"}
             face={"https://www.facebook.com/profile.php?id=100009584351756"}
@@ -94,7 +98,7 @@ const Members = () => {
         </SwiperSlide>
         <SwiperSlide className="h-fit w-fit rounded-2xl">
           <CardUi
-            pic={"/team/ags3.jpeg"}
+            pic={"/team/ags3.webp"}
             name={"Shivam Sinha"}
             designation={"Asst General Secretary"}
             git={"https://github.com/shivam-0077"}
@@ -104,7 +108,7 @@ const Members = () => {
         </SwiperSlide>
         <SwiperSlide className="h-fit w-fit rounded-2xl">
           <CardUi
-            pic={"/team/cs.jpeg"}
+            pic={"/team/cs.webp"}
             name={"Pratim Sen Sharma"}
             designation={"Cultural Secretary"}
             face={"https://www.facebook.com/Pratim.SenSharma"}
@@ -113,7 +117,7 @@ const Members = () => {
         </SwiperSlide>
         <SwiperSlide className="h-fit w-fit rounded-2xl">
           <CardUi
-            pic={"/team/acs1.jpeg"}
+            pic={"/team/acs1.webp"}
             name={"Pratisruti Chatterjee"}
             designation={"Asst Cultural Secretary"}
             face={"https://www.facebook.com/pratisruti.chatterji.5"}
@@ -122,7 +126,7 @@ const Members = () => {
         </SwiperSlide>
         <SwiperSlide className="h-fit w-fit rounded-2xl">
           <CardUi
-            pic={"/team/acs2.jpeg"}
+            pic={"/team/acs2.webp"}
             name={"Srish Bannerjee"}
             designation={"Asst Cultural Secretary"}
             insta={"https://instagram.com/banerjee.srish"}
@@ -146,7 +150,6 @@ const CardUi = (props) => {
       <h1 className="text-xs text-violet-950 tracking-wide mb-0 uppercase italic font-serif">
         {props.designation}
       </h1>
-      {/* <img className="w-60 mt-0 mx-auto" src="divider.png" alt="" /> */}
       <img className="w-60 mt-0 mx-auto" src="divider.png" alt="" />
       <h1 className="mb-4 text-lg text-fuchsia-800 font-bold tracking-wider">
         {props.name}

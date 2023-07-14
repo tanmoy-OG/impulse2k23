@@ -26,7 +26,6 @@ const Present = ({ duration }) => {
         />
       </div>
       <Timer duration={duration} />
-      {/* <div className="relative"><div className="absolute bg-red-600">s</div></div> */}
     </div>
   );
 };
